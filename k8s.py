@@ -15,3 +15,4 @@ with Diagram("K8s",show=True,direction="TB"):
         Pod("pod2"),
         Pod("pod3") ]
     deploy >> replicaset >> pods
+    hpa >> deploy
